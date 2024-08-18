@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>ONG - MAHDED</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="img/mahded logo.png" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+    <style>
+        /* Style de la section home */
+.home {
+    background-color: #2a2a2a; /* Arrière-plan sombre */
+    color: #fff; /* Texte en blanc */
+    text-align: center;
+    padding: 40px 20px;
+    position: relative;
+}
+
+.home h2 {
+    font-size: 2.5em;
+    margin: 0;
+    z-index: 1000;
+}
+
+.home h3 {
+    font-size: 1.5em;
+    margin-top: 10px;
+    color: #f5f5f5;
+    z-index: 1000;
+}
+
+/* Style de la section career-heading */
+.career-heading {
+    background-color: #f5f5f5; /* Arrière-plan clair */
+    color: #333; /* Texte sombre */
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.career-heading .heading {
+    font-size: 2.5em;
+    margin: 0;
+}
+
+.career-heading p {
+    font-size: 1.2em;
+    margin-top: 10px;
+}
+
+/* Style du formulaire de carrière */
+.career-form {
+    background-color: #fff; /* Arrière-plan blanc */
+    border-radius: 8px;
+    padding: 20px;
+    max-width: 600px;
+    margin: 20px auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.career-form-txt, .career-form-email, .career-form-phone, .career-form-experience, .career-form-txtarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+}
+
+.career-form-txtarea {
+    height: 150px;
+}
+
+.career-form-btn {
+    background-color: #007bff; /* Couleur de fond bleue */
+    color: #fff; /* Texte en blanc */
+    border: none;
+    padding: 15px 25px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.career-form-btn:hover {
+    background-color: #0056b3; /* Couleur plus sombre au survol */
+}
+
+/* Style des options de carrière */
+.radio-class {
+    margin-bottom: 20px;
+}
+
+.radio {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.radio input[type="radio"] {
+    margin-right: 10px;
+}
+
+.radio .checkmark {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 1px solid #ddd;
+    display: inline-block;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+.radio input[type="radio"]:checked + .checkmark {
+    background-color: #007bff; /* Couleur de fond bleue */
+}
+
+/* Style des sélecteurs */
+.career-form-select {
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+}
+
+/* Style pour les titres dans les formulaires */
+.name {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.file {
+    margin-bottom: 20px;
+}
+
+</style>
+<style>
+    /* Style pour la section career-heading */
+    #career-heading {
+        padding: 40px 20px;
+        background-color: #f5f5f5; /* Arrière-plan clair pour la visibilité du texte */
+    }
+
+    #career-heading .heading {
+        font-size: 2.5em;
+        text-align: center; /* Centre le titre */
+        margin: 0;
+        color: #333; /* Couleur du texte */
+    }
+
+    #career-heading p {
+        text-align: justify; /* Justifie le texte */
+        font-size: 1.2em; /* Taille de la police pour une meilleure lisibilité */
+        margin-top: 10px;
+        line-height: 1.6; /* Hauteur de ligne pour espacer le texte */
+    }
+</style>
+</head>
+
+<body>
+    <!-- Spinner Start -->
+    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border position-relative text-primary" style="width: 6rem; height: 6rem;" role="status"></div>
+        <i class="fa fa-laptop-code fa-2x text-primary position-absolute top-50 start-50 translate-middle"></i>
+    </div>
+    <!-- Spinner End -->
+
+
+    <!-- Topbar Start -->
+    <div class="container-fluid bg-light px-0 wow fadeIn" data-wow-delay="0.1s">
+        <div class="row gx-0 align-items-center d-none d-lg-flex">
+            <div class="col-lg-6 px-5 text-start">
+                <ol class="breadcrumb mb-0">
+                    <li class="breadcrumb-item"><a class="small text-secondary" href="index.html">Home</a></li>
+                    <li class="breadcrumb-item"><a class="small text-secondary" href="#">Career</a></li>
+                    <li class="breadcrumb-item"><a class="small text-secondary" href="#">Terms</a></li>
+                    <li class="breadcrumb-item"><a class="small text-secondary" href="#">Privacy</a></li>
+                </ol>
+            </div>
+            <div class="col-lg-6 px-5 text-end">
+                <small>Follow us:</small>
+                <div class="h-100 d-inline-flex align-items-center">
+                    <a class="btn-square text-primary border-end rounded-0" href="https://facebook.com/"><i class="fab fa-facebook-f"></i></a>
+                    <a class="btn-square text-primary border-end rounded-0" href=""><i class="fab fa-twitter"></i></a>
+                    <a class="btn-square text-primary border-end rounded-0" href=""><i class="fab fa-linkedin-in"></i></a>
+                    <a class="btn-square text-primary pe-0" href="https://youtube.com/"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Topbar End -->
+
+
+    <!-- Brand & Contact Start -->
+    <div class="container-fluid py-4 px-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="row align-items-center top-bar">
+            <div class="col-lg-4 col-md-12 text-center text-lg-start">
+                <a href="" class="navbar-brand m-0 p-0">
+                    
+                    <img src="img/Logo1.png" alt="Logo">
+                </a>
+            </div>
+            <div class="col-lg-8 col-md-7 d-none d-lg-block">
+                <div class="row">
+                    <div class="col-4">
+                        <div class="d-flex align-items-center justify-content-end">
+                            <div class="flex-shrink-0 btn-lg-square border rounded-circle">
+                                <i class="far fa-clock text-primary"></i>
+                            </div>
+                            <div class="ps-3">
+                                <p class="mb-2">Ouverture</p>
+                                <h6 class="mb-0">Lun-Ven, 8:30-17:30</h6>
+                               <!--<h6 class="mb-0">Saturday, 8:30am-12:30pm</h6>--> 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="d-flex align-items-center justify-content-end">
+                            <div class="flex-shrink-0 btn-lg-square border rounded-circle">
+                                <i class="fab fa-whatsapp text-primary"></i>
+                            </div>
+                            <div class="ps-3">
+                                <p class="mb-2">WhatsApp :</p>
+                                <h6 class="mb-0">+236 72 02 51 85</h6>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="d-flex align-items-center justify-content-end">
+                            <div class="flex-shrink-0 btn-lg-square border rounded-circle">
+                                <i class="far fa-envelope text-primary"></i>
+                            </div>
+                            <div class="ps-3">
+                                <p class="mb-2">Email :</p>
+                                <h6 class="mb-0">contact@mahded.org</h6>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Brand & Contact End -->
+
+
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg bg-primary navbar-dark sticky-top py-lg-0 px-lg-5 wow fadeIn" data-wow-delay="0.1s">
+        <a href="#" class="navbar-brand ms-3 d-lg-none">MENU</a>
+        <button type="button" class="navbar-toggler me-3" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav me-auto p-3 p-lg-0">
+                <a href="index.html" class="nav-item nav-link active">Home</a>
+                <a href="about.html" class="nav-item nav-link">Apropos</a>
+                <a href="project.html" class="nav-item nav-link">Projects</a>
+                <a href="carrière.html" class="nav-item nav-link">Carrière</a> 
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
+                    <div class="dropdown-menu border-0 rounded-0 rounded-bottom m-0">
+                        <a href="" class="dropdown-item">Entreprise</a>
+                        <a href="" class="dropdown-item">Partenaires</a>
+                        <a href="" class="dropdown-item">Adresses</a>
+                    </div>
+                </div>
+                <a href="contact.html" class="nav-item nav-link">Contact Us</a>
+            </div>
+            <a href="" class="btn btn-sm btn-light rounded-pill py-2 px-4 d-none d-lg-block">Donation</a>
+        </div>
+    </nav>
+    <!-- Navbar End -->
+
+
+    <!-- Service Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+                <h6 class="section-title bg-white text-center text-primary px-3">Carrière</h6>
+                <h1 class="display-6 mb-4">Postes disponibles.</h1>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <a class="service-item d-block rounded text-center h-100 p-4" href="">
+                        <img class="img-fluid rounded mb-4" src="img/service-1.jpg" alt="">
+                        <h4 class="mb-0">Cauffeur/Livreur</h4>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <a class="service-item d-block rounded text-center h-100 p-4" href="">
+                        <img class="img-fluid rounded mb-4" src="img/service-2.jpg" alt="">
+                        <h4 class="mb-0">Manoeuvre</h4>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <a class="service-item d-block rounded text-center h-100 p-4" href="">
+                        <img class="img-fluid rounded mb-4" src="img/service-3.jpg" alt="">
+                        <h4 class="mb-0">Envirenementaliste</h4>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Service End -->
+
+
+    <!-- Testimonial Start -->
+    
+    <section id="career-heading" class="career-heading">
+        <h1 class="heading">Opportunités de Carrière.</h1>
+        <p>
+            MAHDED agit à titre d’entrepreneur général dans les secteurs industriel, civil, institutionnel et commercial depuis maintenant 8 ans. 
+            Dans les deux dernières années, l’entreprise a connu une croissance. 
+            Aujourd’hui, nos équipes réalisent des projets de toutes envergures dans toutes les régions de la RCA.
+            Notre entreprise recherche constamment les meilleurs talents à la grandeur de la République Centrafricaine.
+            Vous souhaitez faire partie d'une entreprise qui a l'esprit de famille et qui valorise le travail de ses membres ?
+            Envoyez-nous votre candidature ! Que ce soit pour un poste affiché plus bas ou pour une candidature spontanée, 
+            n’hésitez pas à nous transmettre vos coordonnées si vous désirez vous joindre à notre équipe.
+        </p>
+    </section>
+    
+    <div class="career">
+        <div class="career-form">
+            <form action="https://formspree.io/f/xoqgqqwq" method="POST" enctype="multipart/form-data">
+                <!-- Form Fields -->
+                <input type="text" name="name" placeholder="Nom" class="career-form-txt" required>
+                <input type="tel" id="phone" name="phone" required placeholder="Numéro de Téléphone" maxlength="10" class="career-form-phone">
+                <input type="email" name="_replyto" placeholder="Email" class="career-form-email" required>
+    
+                <!-- Career Options Specific to Your Company -->
+                <div class="radio-class">
+                    <h2 class="name">Pour quel position voulez-vous postuler ?</h2>
+                    <label class="radio">
+                        <input type="radio" name="position" value="Bathroom Designer" required>
+                        <span class="checkmark"></span>
+                        Chauffeur/Livreur
+                    </label>
+                    <label class="radio">
+                        <input type="radio" name="position" value="Project Manager" required>
+                        <span class="checkmark"></span>
+                        Ingenieur Civil
+                    </label>
+                    <label class="radio">
+                        <input type="radio" name="position" value="Sales Representative" required>
+                        <span class="checkmark"></span>
+                        Manoeuvre/Menusier
+                    </label>
+                    <label class="radio">
+                        <input type="radio" name="position" value="Construction Supervisor" required>
+                        <span class="checkmark"></span>
+                        Envirenementaliste
+                    </label>
+                    <label class="radio">
+                        <input type="radio" name="position" value="Quality Control Specialist" required>
+                        <span class="checkmark"></span>
+                        Stagiaire à MAHDED
+                    </label>
+                </div>
+    
+                <input type="number" id="experience" name="experience" required placeholder="Années d'Experiences" min="-1" max="50" class="career-form-experience">
+                <textarea placeholder="Lettre de Motivation" name="cover_letter" class="career-form-txtarea" required></textarea>
+    
+                <div class="file">
+                    <h2 class="name">Uploader votre C-V</h2>
+                    <input style="font-size: 14px" type="file" name="resume" accept=".doc,.docx,.pdf" required><br><br><br>
+                </div>
+    
+                <input type="hidden" name="_subject" value="New Career Inquiry!">
+    
+                <div class="file">
+                    <h2 class="name">Comment avez-vous entendu parler de nous ?</h2>
+                    <select name="hear_about_us" class="career-form-select" required style="border-radius: 8px; height: 21px; font-size: 14px">
+                        <option value="Google">Google</option>
+                        <option value="Facebook">Facebook</option>
+                        <option value="Instagram">Instagram</option>
+                        <option value="LinkedIn">LinkedIn</option>
+                        <option value="Twitter">Twitter</option>
+                        <option value="Friend">Amis</option>
+                        <option value="Other">Autres</option>
+                    </select>
+                </div>
+    
+                <div style="text-align: center">
+                    <input type="submit" value="Envoyer" style="color: white" class="career-form-btn">
+                </div>
+            </form>
+        </div>
+    </div>
+    
+    <!-- Testimonial End -->
+
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-dark text-body footer mt-5 pt-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="text-light mb-4">Address</h5>
+                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>5e Arrd, Bangui; RCA</p>
+                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+ 236 72 02 51 85</p>
+                    <p class="mb-2"><i class="fa fa-envelope me-3"></i>contact@mahded.org</p>
+                    <div class="d-flex pt-2">
+                        <a class="btn btn-square btn-outline-secondary rounded-circle me-1" href=""><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-square btn-outline-secondary rounded-circle me-1" href="https://facebook.com/freewebsitecode/"><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-square btn-outline-secondary rounded-circle me-1" href="https://youtube.com/freewebsitecode/"><i class="fab fa-youtube"></i></a>
+                        <a class="btn btn-square btn-outline-secondary rounded-circle me-0" href=""><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="text-light mb-4">Lien Utiles</h5>
+                    <a class="btn btn-link" href="">Apropos</a>
+                    <a class="btn btn-link" href="">Contact-Nous</a>
+                    <a class="btn btn-link" href="">Nos Services</a>
+                    <a class="btn btn-link" href="">Termes & Condition</a>
+                    <a class="btn btn-link" href="">Autres</a>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="text-light mb-4">Gallerie</h5>
+                    <div class="row g-2">
+                        <div class="col-4">
+                            <img class="img-fluid rounded" src="img/Project-1.png" alt="Image">
+                        </div>
+                        <div class="col-4">
+                            <img class="img-fluid rounded" src="img/Project-2.png" alt="Image">
+                        </div>
+                        <div class="col-4">
+                            <img class="img-fluid rounded" src="img/Project-3.png" alt="Image">
+                        </div>
+                        <div class="col-4">
+                            <img class="img-fluid rounded" src="img/Project-4.png" alt="Image">
+                        </div>
+                        <div class="col-4">
+                            <img class="img-fluid rounded" src="img/Project-5.png" alt="Image">
+                        </div>
+                        <div class="col-4">
+                            <img class="img-fluid rounded" src="img/Project-6.png" alt="Image">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="text-light mb-4">Newsletter</h5>
+                    <p>Inscrivez-vous à notre boite aux lettres.</p>
+                    <div class="position-relative mx-auto" style="max-width: 400px;">
+                        <input class="form-control bg-transparent border-secondary w-100 py-3 ps-4 pe-5" type="text" placeholder="Your email">
+                        <button type="button" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">S'Inscrire</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid copyright">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                        &copy; 2024<a href="http://mahded.org"> MAHDED</a>, Tout droits réservés.
+                    </div>
+                    <div class="col-md-6 text-center text-md-end">
+                        
+                        Designed By <a href="http://zen-astra.org">Zen-Astra</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
